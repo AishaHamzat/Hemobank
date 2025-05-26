@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Dewi Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <style>
+    
+    
+    footer {
+      background-color: #dc3545;
+      color: white;
+      padding: 20px 0;
+    }
+    .dashboard {
+      background-color: #f8f9fa;
+      padding: 60px 0;
+      padding-top: 20%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header id="header" class="header d-flex align-items-center fixed-top" style="background-color:#dc3545 ;">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+         <img src="assets/img/logo.png" alt="" style="width: 80px; height: 60px;"> 
+        <h1 class="sitename" style="text-decoration: none;">HemoBanK</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul style="text-decoration: none;">
+          <li><a style="text-decoration: none;" href="index.html" class="active">Home</a></li>
+          <li><a href="#about" style="text-decoration: none;">About</a></li>
+          <li class="dropdown"><a href="#" style="text-decoration: none;"><span>Register</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+                  <li><a href="Hospital-signup.html" style="text-decoration: none;">Hospital</a></li>
+                  <li><a href="Donor-signup.html" style="text-decoration: none;">Donor</a></li>
+                  
+                </ul>
+              </li>
+             
+              <li><a href="AiMatching.html" style="text-decoration: none;">Match Donor</a></li>
+          <li><a href="index.html#contact" style="text-decoration: none;">Contact</a></li>
+        </ul>
+        
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="cta-btn" href="Login.html">Login</a>
+
+    </div>
+  </header>
+ 
+  <!-- Dashboard Section -->
+  <section id="dashboard" class="dashboard">
+    <div class="container">
+      <h2 class="text-center mb-5">Your Dashboard</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Upcoming Appointments</h5>
+              <p class="card-text" id="upcomingAppointments">Loading...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Donation History</h5>
+              <ul class="list-unstyled" id="donationHistory">Loading...</ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Blood Eligibility</h5>
+              <p class="card-text" id="eligibility">Loading...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title">Health Tips</h5>
+              <p class="card-text" id="healthTips">Loading...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!-- Donor Profile Section -->
+   <section id="profile" class="container py-5">
+    <h2 class="text-center mb-4">Your Profile Settings</h2>
+    <form class="mx-auto" style="max-width: 500px;">
+      <div class="mb-3">
+        <label for="profileName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="profileName" value="John Doe">
+      </div>
+      <div class="mb-3">
+        <label for="profileName" class="form-label">Address</label>
+        <input type="text" class="form-control" id="profileName" value="John Doe">
+      </div>
+      <div class="mb-3">
+        <label for="profileEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="profileEmail" value="john@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="profileBlood" class="form-label">Blood Type</label>
+        <select class="form-select" id="profileBlood">
+          <option selected>O+</option>
+          <option>A+</option>
+          <option>A-</option>
+          <option>B+</option>
+          <option>B-</option>
+          <option>O-</option>
+          <option>AB+</option>
+          <option>AB-</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-danger w-100">Update Profile</button>
+    </form>
+
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel">Success</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modalMessage">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <footer id="footer" class="footer" style="background-color:#dc3545 ; color: antiquewhite;">
+
+   
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">HemoBank</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        
+       Privacy policy <span>Terms and condition</span>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" style="background-color:#dc3545 ;"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    function handleSubmit(event, message) {
+      event.preventDefault();
+      document.getElementById('modalMessage').textContent = message;
+      const modal = new bootstrap.Modal(document.getElementById('successModal'));
+      modal.show();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const data = {
+        upcomingAppointments: "Next donation: May 2, 2025 at City Health Center.",
+        donationHistory: ["Mar 1, 2025 - O+ - Accepted", "Dec 15, 2024 - O+ - Accepted"],
+        eligibility: "You are eligible to donate again on May 2, 2025.",
+        healthTips: "Stay hydrated, eat iron-rich foods, and rest well before donating."
+      };
+
+      document.getElementById('upcomingAppointments').textContent = data.upcomingAppointments;
+      const historyList = document.getElementById('donationHistory');
+      historyList.innerHTML = '';
+      data.donationHistory.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        historyList.appendChild(li);
+      });
+      document.getElementById('eligibility').textContent = data.eligibility;
+      document.getElementById('healthTips').textContent = data.healthTips;
+    });
+  </script>
+</body>
+</html>
